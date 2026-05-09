@@ -43,4 +43,4 @@ QC_MEM=4G
 
 # ----- Cleanup policy -----
 # When false, intermediate BAMs / index files are removed after stage 04.
-KEEP_INTERMEDIATE_BAMS=false
+KEEP_INTERMEDIATE_BAMS=true

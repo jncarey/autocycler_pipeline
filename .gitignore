@@ -1,0 +1,10 @@
+# Per-isolate run outputs — never commit
+runs/
+
+# Stray logs / stderr at the repo root
+*.log
+*.stderr
+
+# Editor / OS noise
+.DS_Store
+*.swp
