@@ -3,19 +3,20 @@
 # and the driver. Do not put logic here, only assignments.
 
 # ----- Reference read locations (project convention) -----
-ONT_READS_DIR=/net/feder/vol1/project/spatially_sampled_Pa/data/reference_reads/ont/fastq_qc
-ILLUMINA_READS_DIR=/net/feder/vol1/project/spatially_sampled_Pa/data/reference_reads/illumina/fastq_qc
+ONT_READS_DIR=/net/feder/vol1/project/pa_promise/jeffrey/data/2026-07-16/reads_qc/ont
+ILLUMINA_READS_DIR=/net/feder/vol1/project/pa_promise/jeffrey/data/2026-07-16/reads_qc/illumina
 
 # ----- Pipeline root and run output root -----
-PIPELINE_ROOT=/net/feder/vol1/project/pseudomonas_selection/autocycler
+PIPELINE_ROOT=/net/feder/vol1/home/jncarey/repos/autocycler_pipeline
 JOBS_DIR="${PIPELINE_ROOT}/jobs"
 RUNS_DIR="${PIPELINE_ROOT}/runs"
 
 # ----- Shared, project-wide assets (provisioned by bin/setup_shared_assets.sh) -----
 SHARED_ASSETS_DIR="${PIPELINE_ROOT}/assets"
-# Default Clair3 model — all current isolates are ONT R9. Override per-isolate
-# via an optional `clair3_model` column in samples.tsv.
-CLAIR3_MODEL_DEFAULT=r941_prom_sup_g5014
+# Default Clair3 model — this fork is dedicated to pa_promise PROMISE-cohort
+# isolates, currently all ONT R10.4.1 sup v4.3.0. Override per-isolate via an
+# optional `clair3_model` column in samples.tsv if a future isolate differs.
+CLAIR3_MODEL_DEFAULT=r1041_e82_400bps_sup_v430_bacteria_finetuned
 
 # ----- Stage 00 (assembly) resource defaults — preserve dev values -----
 ASSEMBLY_THREADS=8
