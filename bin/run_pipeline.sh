@@ -115,7 +115,7 @@ launch_stage() {
     local run_dir="${RUNS_DIR}/${isolate}"
     local logs="${run_dir}/logs"
     ensure_dir "$logs"
-    local name="${isolate}_${stage}"
+    local name="iso_${isolate}_${stage}"
     local args=(
         -N "$name"
         -o "${logs}/${stage}.log"

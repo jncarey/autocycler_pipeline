@@ -167,7 +167,7 @@ log_info "Changing to output directory: $outdir"
 cd "$outdir"
 mkdir -p logs
 
-source ~/.bashrc
+source ~/miniforge3/etc/profile.d/conda.sh
 conda activate autocycler
 
 # If all 28 assembly outputs already exist, skip the fan-out and go straight
@@ -313,7 +313,7 @@ if [[ "$resume_after_assembly" == false ]]; then
 set -euo pipefail
 
 # Initialize conda
-source ~/.bashrc
+source ~/miniforge3/etc/profile.d/conda.sh
 
 # Activate environment
 conda activate autocycler

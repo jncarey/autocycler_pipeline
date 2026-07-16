@@ -13,7 +13,7 @@
 # Required env: CONFIG, ISOLATE
 
 set -euo pipefail
-source ~/.bashrc
+source ~/miniforge3/etc/profile.d/conda.sh
 
 : "${CONFIG:?CONFIG not set}"
 : "${ISOLATE:?ISOLATE not set}"
