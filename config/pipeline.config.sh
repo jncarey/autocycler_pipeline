@@ -3,8 +3,8 @@
 # and the driver. Do not put logic here, only assignments.
 
 # ----- Reference read locations (project convention) -----
-ONT_READS_DIR=/net/feder/vol1/project/pa_promise/jeffrey/data/2026-07-16/reads_qc/ont
-ILLUMINA_READS_DIR=/net/feder/vol1/project/pa_promise/jeffrey/data/2026-07-16/reads_qc/illumina
+ONT_READS_DIR=/net/feder/vol1/project/pa_promise/jeffrey/data/reads_qc/ont
+ILLUMINA_READS_DIR=/net/feder/vol1/project/pa_promise/jeffrey/data/reads_qc/illumina
 
 # ----- Pipeline root and run output root -----
 PIPELINE_ROOT=/net/feder/vol1/home/jncarey/repos/autocycler_pipeline

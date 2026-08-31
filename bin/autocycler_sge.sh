@@ -273,7 +273,12 @@ if [[ "$resume_after_assembly" == false ]]; then
                     threads_val="8"
                     ;;
                 flye|plassembler)
-                    sge_time_val="2h"
+                    # 2h until 2026-08-31. Flye's greedy disjointig extension can
+                    # take ~69 min instead of the usual ~70 s on particular
+                    # subsamples (deterministic; reproduced to within 3 s a month
+                    # apart on different hosts) with no detectable difference in
+                    # read content -- 149-001_V1_34 buckets 01/02/03. Ceiling only.
+                    sge_time_val="6h"
                     sge_mem_val="8g"
                     threads_val="2"
                     ;;
