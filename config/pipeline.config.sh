@@ -21,7 +21,7 @@ CLAIR3_MODEL_DEFAULT=r1041_e82_400bps_sup_v430_bacteria_finetuned
 # ----- Stage 00 (assembly) resource defaults — preserve dev values -----
 ASSEMBLY_THREADS=8
 ASSEMBLY_MAX_TIME=8h
-ASSEMBLY_MAX_MEM=32g
+ASSEMBLY_MAX_MEM=96g
 ASSEMBLY_MAX_CONCURRENT=10            # per-isolate cap, passed to autocycler_sge.sh -C
 GLOBAL_ASSEMBLY_MAX_CONCURRENT=20     # cluster-wide cap across isolates, enforced by driver
 
