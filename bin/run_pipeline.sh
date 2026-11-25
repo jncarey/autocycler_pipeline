@@ -14,7 +14,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-CONFIG="${SCRIPT_DIR}/../config/pipeline.config.sh"
+CONFIG="${CONFIG:-${SCRIPT_DIR}/../config/pipeline.config.sh}"
 SAMPLES_DEFAULT="${SCRIPT_DIR}/../config/samples.tsv"
 
 source "$CONFIG"
